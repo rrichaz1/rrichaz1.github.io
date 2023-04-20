@@ -1,8 +1,4 @@
 
----
-title: "My understanding of Pedro Domingos's The Master Algorithm: How the Quest for the Ultimate Learning Machine Will Remake Our World"
-date: 2021-02-21
----
 Pedro Domingos's The Master Algorithm: How the Quest for the Ultimate Learning Machine Will Remake Our World
 
 
