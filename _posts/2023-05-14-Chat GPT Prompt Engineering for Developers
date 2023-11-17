@@ -1,0 +1,15 @@
+
+
+With the release of Chat GPT, Large Langauge Models have taken front seat in conversations. A large number of open source models and training techniques have flourished, s has prompt engineering as a discipline.
+
+Learnings fropm Andrew Ng's course on prompt engineering for developers
+
+***Base LLM*** predicts next word based in training data. This may not always give context specific answers
+***Instruction Tuned LLM*** tries to follow instructions. If you were to ask it, what is the capital of France is much more likely to output something like the capital of France is Paris.  
+
+You start off with a base LLMs that's been trained on a huge amount of text data And further train it for the fine tune it with inputs and outputs that are instructions and good attempts to follow those instructions.  Refine using a technique called ***RLHF*** Reinforcement Learning with Human Feedback to make the system better able to be helpful and follow instructions.
+
+
+
+
+[Open-AI-Cookbook](https://github.com/openai/openai-cookbook)

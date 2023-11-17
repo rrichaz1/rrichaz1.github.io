@@ -1,0 +1,1 @@
+Are you an architect or a software engineer looking to use drools engine to automate complex business processes and make better decisions based on real-time data and insights? If so,the landing page of drools introduces you

@@ -1,0 +1,19 @@
+https://learn.microsoft.com/en-us/azure/cosmos-db/merge?tabs=azure-powershell%2Cnosql
+
+https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/distribute-throughput-across-partitions
+
+https://learn.microsoft.com/en-us/azure/data-explorer/ingest-data-cosmos-db-connection?tabs=portal
+
+
+Migration options:
+Azure Cosmos DB Migration options | Microsoft Learn
+Azure Cosmos DB Migration options
+This doc describes the various options to migrate your on-premises or cloud data to Azure Cosmos DB
+
+
+•	   1. Intra Container Account Copy
+•	  2.  Custom tool with Azure Cosmos DB bulk executor library 
+•	3.  AzureCosmosDB/data-migration-desktop-tool
+How do RUs impact Database Performance?
+
+ 

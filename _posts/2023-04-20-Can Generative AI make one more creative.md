@@ -1,0 +1,1 @@
+As I and my colleague were waiting for others to join a meeting, she started showing some of her paintings. They were beautiful but more surprising they were inspired by AI. She prompts the AI to generate multiple images and then mixes n matches them to create a new image. She demonstrated 

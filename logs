@@ -1,0 +1,284 @@
+13:47:33,411 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0042: Started message driven bean 'KieExecutorMDB' with 'activemq-ra.rar' resource adapter
+13:47:33,413 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0042: Started message driven bean 'KieServerMDB' with 'activemq-ra.rar' resource adapter
+13:47:33,475 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 68) ISPN000128: Infinispan version: Infinispan 'Corona Extra' 11.0.9.Final
+13:47:33,550 INFO  [org.infinispan.CONFIG] (MSC service thread 1-3) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+13:47:33,552 INFO  [org.infinispan.CONFIG] (MSC service thread 1-3) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+13:47:33,691 INFO  [org.infinispan.PERSISTENCE] (ServerService Thread Pool -- 68) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.spi.marshalling.InfinispanProtoStreamMarshaller'
+13:47:34,162 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 68) WFLYCLINF0002: Started http-remoting-connector cache from ejb container
+13:47:34,254 INFO  [org.wildfly.security] (MSC service thread 1-3) ELY00001: WildFly Elytron version 1.15.3.Final
+13:47:34,412 INFO  [org.kie.server.jms.RetryTrackerSingleton] (ServerService Thread Pool -- 68) JMS message retry limit set to 2
+13:47:34,438 INFO  [org.jbpm.services.ejb.timer.EJBTimerScheduler] (ServerService Thread Pool -- 64) Using local cache for EJB timers: false
+13:47:34,577 INFO  [org.kie.server.remote.rest.common.Bootstrap] (ServerService Thread Pool -- 64) KieServer (id kie-server-waas (name kie-server-waas)) started initialization process
+13:47:35,069 INFO  [org.kie.internal.pmml.PMMLImplementationsUtil] (ServerService Thread Pool -- 64) Using NEW implementation
+13:47:35,070 INFO  [org.kie.internal.pmml.PMMLImplementationsUtil] (ServerService Thread Pool -- 64) Using NEW implementation
+13:47:35,089 INFO  [org.kie.server.services.impl.KieServerImpl] (ServerService Thread Pool -- 64) Starting server in 'DEVELOPMENT' mode.
+13:47:35,096 INFO  [org.kie.server.services.impl.KieServerImpl] (ServerService Thread Pool -- 64) Selected startup strategy ControllerBasedStartupStrategy - deploys kie containers given by controller ignoring locally defined
+13:47:35,105 INFO  [org.kie.server.services.impl.KieServerImpl] (ServerService Thread Pool -- 64) Configured 'KieServerStateFileRepository' server state repository
+13:47:35,199 INFO  [org.kie.server.services.impl.KieServerImpl] (ServerService Thread Pool -- 64) Server Default Extension has been successfully registered as server extension
+13:47:35,273 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 64) HHH000204: Processing PersistenceUnitInfo [
+	name: org.jbpm.domain
+	...]
+13:47:35,367 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 64) HHH000412: Hibernate Core {5.3.20.Final}
+13:47:35,372 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 64) HHH000206: hibernate.properties not found
+13:47:35,561 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 64) HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+13:47:36,262 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 64) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+13:47:36,270 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 64) HHH000431: Unable to determine H2 database version, certain features may not work
+13:47:36,859 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 64) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+13:47:38,277 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (ServerService Thread Pool -- 64) HHH000397: Using ASTQueryTranslatorFactory
+13:47:38,665 WARN  [org.hibernate.dialect.function.TemplateRenderer] (ServerService Thread Pool -- 64) HHH000174: Function template anticipated 4 arguments, but 1 arguments encountered
+13:47:38,666 WARN  [org.hibernate.dialect.function.TemplateRenderer] (ServerService Thread Pool -- 64) HHH000174: Function template anticipated 4 arguments, but 1 arguments encountered
+13:47:38,947 INFO  [org.drools.persistence.api.TransactionManagerFactory] (ServerService Thread Pool -- 64) Using org.drools.persistence.jta.JtaTransactionManagerFactory@1a0a3622
+13:47:39,304 INFO  [org.kie.server.api.marshalling.json.JSONMarshaller] (ServerService Thread Pool -- 64) Marshaller extensions init
+13:47:39,593 INFO  [org.kie.server.services.impl.KieServerImpl] (ServerService Thread Pool -- 64) jBPM KIE Server extension has been successfully registered as server extension
+13:47:39,596 INFO  [org.kie.server.services.impl.KieServerImpl] (ServerService Thread Pool -- 64) Drools KIE Server extension has been successfully registered as server extension
+13:47:39,672 INFO  [org.kie.server.services.impl.KieServerImpl] (ServerService Thread Pool -- 64) Case-Mgmt KIE Server extension has been successfully registered as server extension
+13:47:39,879 INFO  [org.kie.server.services.jbpm.ui.form.render.BootstrapFormRenderer] (ServerService Thread Pool -- 64) Boostrap Form renderer templates loaded successfully.
+13:47:39,884 INFO  [org.kie.server.services.jbpm.ui.form.render.PatternflyFormRenderer] (ServerService Thread Pool -- 64) patternfly Form renderer templates loaded successfully.
+13:47:39,889 INFO  [org.kie.server.services.jbpm.ui.form.render.PatternflyFormRenderer] (ServerService Thread Pool -- 64) workbench Form renderer templates loaded successfully.
+13:47:39,890 INFO  [org.kie.server.services.impl.KieServerImpl] (ServerService Thread Pool -- 64) jBPM-UI KIE Server extension has been successfully registered as server extension
+13:47:39,890 INFO  [org.kie.server.services.optaplanner.OptaplannerKieServerExtension] (ServerService Thread Pool -- 64) Creating a ThreadPoolExecutor with corePoolSize = 6, maximumPoolSize = 6, queueSize = 6
+13:47:39,914 INFO  [org.kie.server.services.impl.KieServerImpl] (ServerService Thread Pool -- 64) OptaPlanner KIE Server extension has been successfully registered as server extension
+13:47:39,921 INFO  [org.kie.server.services.impl.KieServerImpl] (ServerService Thread Pool -- 64) DMN KIE Server extension has been successfully registered as server extension
+13:47:39,973 WARN  [org.reflections.Reflections] (ServerService Thread Pool -- 64) given scan urls are empty. set urls in the configuration
+13:47:39,996 INFO  [org.kie.server.services.impl.KieServerImpl] (ServerService Thread Pool -- 64) Swagger KIE Server extension has been successfully registered as server extension
+13:47:40,001 INFO  [org.kie.server.services.impl.policy.PolicyManager] (ServerService Thread Pool -- 64) Registered KeepLatestContainerOnlyPolicy{interval=0 ms} policy under name KeepLatestOnly
+13:47:40,001 INFO  [org.kie.server.services.impl.policy.PolicyManager] (ServerService Thread Pool -- 64) Policy manager started successfully, activated policies are []
+13:47:40,018 INFO  [org.kie.server.remote.rest.common.Bootstrap] (ServerService Thread Pool -- 64) KieServer (id kie-server-waas) started successfully
+13:47:40,022 INFO  [org.kie.server.services.impl.ContainerManager] (EJB default - 1) About to install containers on kie server 
+	KieServer{id='kie-server-waas'name='kie-server-waas'version='7.73.0.Final'location='http://localhost:8080/kie-server/services/rest/server'}:
+	KieContainerResource [containerId=T0dbe28f56b6540b7b74c8653cd6fb873, releaseId=com.optum.rws.waas.data.generated:T0dbe28f56b6540b7b74c8653cd6fb873:6.0-SNAPSHOT, resolvedReleaseId=null, status=STARTED]
+	KieContainerResource [containerId=TSAND9a6ff7e27dd2461da3c707cb8923d277test, releaseId=com.optum.rws.waas.data.generated:TSAND9a6ff7e27dd2461da3c707cb8923d277test:LATEST, resolvedReleaseId=null, status=STARTED]
+	KieContainerResource [containerId=T5b97e73dfd0b45dc8915TestLocal, releaseId=com.optum.rws.waas.data.generated:T5b97e73dfd0b45dc8915TestLocal:6.0, resolvedReleaseId=com.optum.rws.waas.data.generated:T5b97e73dfd0b45dc8915TestLocal:6.0, status=STARTED]
+	KieContainerResource [containerId=T5b97e73dfd0b45dc8915Testdevelop, releaseId=com.optum.rws.waas.data.generated:T5b97e73dfd0b45dc8915Testdevelop:LATEST, resolvedReleaseId=null, status=STARTED]
+	KieContainerResource [containerId=T5b97e73dfd0b45dc8915Test, releaseId=com.optum.rws.waas.data.generated:T5b97e73dfd0b45dc8915Test:4.0-SNAPSHOT, resolvedReleaseId=com.optum.rws.waas.data.generated:T5b97e73dfd0b45dc8915Test:4.0-SNAPSHOT, status=STARTED]
+	KieContainerResource [containerId=T35a5a232f94540899d77504a15fTest, releaseId=com.optum.rws.waas.data.generated:T35a5a232f94540899d77504a15fTest:1.0-SNAPSHOT, resolvedReleaseId=null, status=STARTED]
+13:47:40,053 WARN  [org.appformer.maven.integration.embedder.MavenSettings] (EJB default - 1) Environment variable M2_HOME is not set
+13:47:40,946 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002225: Deploying javax.ws.rs.core.Application: class org.kie.server.remote.rest.common.KieServerApplication
+13:47:40,966 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002220: Adding singleton resource org.kie.server.remote.rest.common.resource.KieServerRestImpl from Application class org.kie.server.remote.rest.common.KieServerApplication
+13:47:40,967 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002220: Adding singleton resource org.kie.server.remote.rest.common.resource.KieServerResource from Application class org.kie.server.remote.rest.common.KieServerApplication
+13:47:40,968 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002220: Adding singleton resource org.kie.server.remote.rest.drools.CommandResource from Application class org.kie.server.remote.rest.common.KieServerApplication
+13:47:40,969 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002220: Adding singleton resource org.kie.server.remote.rest.jbpm.ProcessResource from Application class org.kie.server.remote.rest.common.KieServerApplication
+13:47:40,970 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002220: Adding singleton resource org.kie.server.remote.rest.jbpm.RuntimeDataResource from Application class org.kie.server.remote.rest.common.KieServerApplication
+13:47:40,971 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002220: Adding singleton resource org.kie.server.remote.rest.jbpm.DefinitionResource from Application class org.kie.server.remote.rest.common.KieServerApplication
+13:47:40,971 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002220: Adding singleton resource org.kie.server.remote.rest.jbpm.UserTaskResource from Application class org.kie.server.remote.rest.common.KieServerApplication
+13:47:40,972 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002220: Adding singleton resource org.kie.server.remote.rest.jbpm.ExecutorResource from Application class org.kie.server.remote.rest.common.KieServerApplication
+13:47:40,975 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002220: Adding singleton resource org.kie.server.remote.rest.jbpm.QueryDataResource from Application class org.kie.server.remote.rest.common.KieServerApplication
+13:47:40,975 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002220: Adding singleton resource org.kie.server.remote.rest.jbpm.DocumentResource from Application class org.kie.server.remote.rest.common.KieServerApplication
+13:47:40,976 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002220: Adding singleton resource org.kie.server.remote.rest.jbpm.admin.ProcessAdminResource from Application class org.kie.server.remote.rest.common.KieServerApplication
+13:47:40,977 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002220: Adding singleton resource org.kie.server.remote.rest.jbpm.admin.UserTaskAdminResource from Application class org.kie.server.remote.rest.common.KieServerApplication
+13:47:40,977 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002220: Adding singleton resource org.kie.server.remote.rest.casemgmt.CaseResource from Application class org.kie.server.remote.rest.common.KieServerApplication
+13:47:40,978 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002220: Adding singleton resource org.kie.server.remote.rest.casemgmt.CaseQueryResource from Application class org.kie.server.remote.rest.common.KieServerApplication
+13:47:40,978 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002220: Adding singleton resource org.kie.server.remote.rest.casemgmt.CaseAdminResource from Application class org.kie.server.remote.rest.common.KieServerApplication
+13:47:40,982 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002220: Adding singleton resource org.kie.server.remote.rest.jbpm.ui.FormResource from Application class org.kie.server.remote.rest.common.KieServerApplication
+13:47:40,984 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002220: Adding singleton resource org.kie.server.remote.rest.jbpm.ui.ImageResource from Application class org.kie.server.remote.rest.common.KieServerApplication
+13:47:40,985 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002220: Adding singleton resource org.kie.server.remote.rest.jbpm.ui.StaticFilesResource from Application class org.kie.server.remote.rest.common.KieServerApplication
+13:47:40,985 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002220: Adding singleton resource org.kie.server.remote.rest.optaplanner.SolverResource from Application class org.kie.server.remote.rest.common.KieServerApplication
+13:47:40,986 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002220: Adding singleton resource org.kie.server.remote.rest.dmn.ModelEvaluatorResource from Application class org.kie.server.remote.rest.common.KieServerApplication
+13:47:40,986 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002220: Adding singleton resource org.kie.server.remote.rest.swagger.KieApiListingResource from Application class org.kie.server.remote.rest.common.KieServerApplication
+13:47:40,987 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002210: Adding provider singleton io.swagger.jaxrs.listing.SwaggerSerializers from Application class org.kie.server.remote.rest.common.KieServerApplication
+13:47:41,533 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 64) WFLYUT0021: Registered web context: '/kie-server' for server 'default-server'
+13:47:41,553 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 37) WFLYSRV0010: Deployed "kie-server.war" (runtime-name : "kie-server.war")
+13:47:41,613 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+13:47:41,636 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 23.0.2.Final (WildFly Core 15.0.1.Final) started in 23602ms - Started 545 of 757 services (380 services are lazy, passive or on-demand)
+13:47:41,670 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+13:47:41,670 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+13:47:45,543 INFO  [org.drools.compiler.kie.builder.impl.InternalKieModuleProvider] (EJB default - 1) Creating KieModule for artifact com.optum.rws.waas.data.generated:T0dbe28f56b6540b7b74c8653cd6fb873:6.0-SNAPSHOT
+13:47:45,555 INFO  [org.drools.modelcompiler.CanonicalKieModuleProvider] (EJB default - 1) No executable model found for artifact com.optum.rws.waas.data.generated:T0dbe28f56b6540b7b74c8653cd6fb873:6.0-SNAPSHOT. Falling back to resources parsing.
+13:47:45,737 INFO  [org.drools.compiler.kie.builder.impl.KieContainerImpl] (EJB default - 1) Start creation of KieBase: KBase
+13:47:47,602 INFO  [org.drools.compiler.kie.builder.impl.KieContainerImpl] (EJB default - 1) End creation of KieBase: KBase
+13:47:47,607 WARN  [org.jboss.modules.define] (EJB default - 1) Failed to define class .module-info in Module "deployment.kie-server.war" from Service Module Loader: java.lang.NoClassDefFoundError: Failed to link /module-info (Module "deployment.kie-server.war" from Service Module Loader): /module-info is not a class because access_flag ACC_MODULE is set
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1017)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1096)
+	at org.jboss.modules.ModuleClassLoader.doDefineOrLoadClass(ModuleClassLoader.java:424)
+	at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:555)
+	at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:339)
+	at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:126)
+	at org.jboss.modules.Module.loadModuleClass(Module.java:753)
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:247)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:410)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398)
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:128)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:576)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:576)
+	at deployment.kie-server.war//org.drools.reflective.classloader.ProjectClassLoader.internalLoadClass(ProjectClassLoader.java:173)
+	at deployment.kie-server.war//org.drools.reflective.classloader.ProjectClassLoader.loadClass(ProjectClassLoader.java:146)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at deployment.kie-server.war//org.kie.server.services.drools.DroolsKieServerExtension.createContainer(DroolsKieServerExtension.java:115)
+	at deployment.kie-server.war//org.kie.server.services.impl.KieServerImpl.createContainer(KieServerImpl.java:343)
+	at deployment.kie-server.war//org.kie.server.services.impl.ContainerManager.installContainersSync(ContainerManager.java:49)
+	at deployment.kie-server.war//org.kie.server.services.impl.ContainerManager.installContainers(ContainerManager.java:35)
+	at deployment.kie-server.war//org.kie.server.jms.ContainerManagerEJB.installContainers(ContainerManagerEJB.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.as.ee@23.0.2.Final//org.jboss.as.ee.component.ManagedReferenceMethodInterceptor.processInvocation(ManagedReferenceMethodInterceptor.java:52)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:509)
+	at org.jboss.as.weld.common@23.0.2.Final//org.jboss.as.weld.interceptors.Jsr299BindingsInterceptor.delegateInterception(Jsr299BindingsInterceptor.java:79)
+	at org.jboss.as.weld.common@23.0.2.Final//org.jboss.as.weld.interceptors.Jsr299BindingsInterceptor.doMethodInterception(Jsr299BindingsInterceptor.java:89)
+	at org.jboss.as.weld.common@23.0.2.Final//org.jboss.as.weld.interceptors.Jsr299BindingsInterceptor.processInvocation(Jsr299BindingsInterceptor.java:102)
+	at org.jboss.as.ee@23.0.2.Final//org.jboss.as.ee.component.interceptors.UserInterceptorFactory$1.processInvocation(UserInterceptorFactory.java:63)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@23.0.2.Final//org.jboss.as.ejb3.component.invocationmetrics.ExecutionTimeInterceptor.processInvocation(ExecutionTimeInterceptor.java:43)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@23.0.2.Final//org.jboss.as.ejb3.tx.EjbBMTInterceptor.handleInvocation(EjbBMTInterceptor.java:103)
+	at org.jboss.as.ejb3@23.0.2.Final//org.jboss.as.ejb3.tx.BMTInterceptor.processInvocation(BMTInterceptor.java:57)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ee@23.0.2.Final//org.jboss.as.ee.concurrent.ConcurrentContextInterceptor.processInvocation(ConcurrentContextInterceptor.java:45)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InitialInterceptor.processInvocation(InitialInterceptor.java:40)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:53)
+	at org.jboss.as.ee@23.0.2.Final//org.jboss.as.ee.component.interceptors.ComponentDispatcherInterceptor.processInvocation(ComponentDispatcherInterceptor.java:52)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@23.0.2.Final//org.jboss.as.ejb3.component.singleton.SingletonComponentInstanceAssociationInterceptor.processInvocation(SingletonComponentInstanceAssociationInterceptor.java:53)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@23.0.2.Final//org.jboss.as.ejb3.component.interceptors.AdditionalSetupInterceptor.processInvocation(AdditionalSetupInterceptor.java:54)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:509)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.module.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:81)
+	at org.jboss.as.weld.common@23.0.2.Final//org.jboss.as.weld.ejb.EjbRequestScopeActivationInterceptor.processInvocation(EjbRequestScopeActivationInterceptor.java:89)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@23.0.2.Final//org.jboss.as.ejb3.component.interceptors.CurrentInvocationContextInterceptor.processInvocation(CurrentInvocationContextInterceptor.java:41)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@23.0.2.Final//org.jboss.as.ejb3.component.invocationmetrics.WaitTimeInterceptor.processInvocation(WaitTimeInterceptor.java:47)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@23.0.2.Final//org.jboss.as.ejb3.security.SecurityContextInterceptor.processInvocation(SecurityContextInterceptor.java:100)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@23.0.2.Final//org.jboss.as.ejb3.deployment.processors.StartupAwaitInterceptor.processInvocation(StartupAwaitInterceptor.java:22)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:509)
+	at org.jboss.as.ejb3@23.0.2.Final//org.jboss.as.ejb3.component.singleton.ContainerManagedConcurrencyInterceptor.processInvocation(ContainerManagedConcurrencyInterceptor.java:106)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@23.0.2.Final//org.jboss.as.ejb3.component.interceptors.ShutDownInterceptorFactory$1.processInvocation(ShutDownInterceptorFactory.java:64)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@23.0.2.Final//org.jboss.as.ejb3.component.interceptors.LoggingInterceptor.processInvocation(LoggingInterceptor.java:67)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ee@23.0.2.Final//org.jboss.as.ee.component.NamespaceContextInterceptor.processInvocation(NamespaceContextInterceptor.java:50)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.ContextClassLoaderInterceptor.processInvocation(ContextClassLoaderInterceptor.java:60)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:438)
+	at org.wildfly.security.elytron-private@1.15.3.Final//org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:633)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.AccessCheckingInterceptor.processInvocation(AccessCheckingInterceptor.java:57)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:53)
+	at org.jboss.as.ee@23.0.2.Final//org.jboss.as.ee.component.ViewService$View.invoke(ViewService.java:198)
+	at org.jboss.as.ee@23.0.2.Final//org.jboss.as.ee.component.ViewDescription$1.processInvocation(ViewDescription.java:191)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@23.0.2.Final//org.jboss.as.ejb3.component.interceptors.LogDiagnosticContextRecoveryInterceptor.processInvocation(LogDiagnosticContextRecoveryInterceptor.java:82)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@23.0.2.Final//org.jboss.as.ejb3.component.interceptors.AsyncFutureInterceptorFactory$2$2.runInvocation(AsyncFutureInterceptorFactory.java:152)
+	at org.jboss.as.ejb3@23.0.2.Final//org.jboss.as.ejb3.component.interceptors.AsyncInvocationTask.run(AsyncInvocationTask.java:81)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1348)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.JBossThread.run(JBossThread.java:513)
+
+13:47:47,610 WARN  [org.kie.server.services.drools.DroolsKieServerExtension] (EJB default - 1) Unexpected error while create instance of type .module-info due to Failed to link /module-info (Module "deployment.kie-server.war" from Service Module Loader): /module-info is not a class because access_flag ACC_MODULE is set
+13:47:47,802 WARN  [org.kie.server.services.drools.DroolsKieServerExtension] (EJB default - 1) Unexpected error while create instance of type com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder$7 due to class com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder$7 cannot access its superinterface com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder$WithMember (com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder$7 is in unnamed module of loader org.kie.scanner.KieURLClassLoader @24563422; com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder$WithMember is in unnamed module of loader 'com.fasterxml.jackson.core.jackson-databind@2.12.1' @4c2e0c40)
+13:47:47,808 WARN  [org.kie.server.services.drools.DroolsKieServerExtension] (EJB default - 1) Unexpected error while create instance of type com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder$9 due to class com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder$9 cannot access its superinterface com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder$WithMember (com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder$9 is in unnamed module of loader org.kie.scanner.KieURLClassLoader @24563422; com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder$WithMember is in unnamed module of loader 'com.fasterxml.jackson.core.jackson-databind@2.12.1' @4c2e0c40)
+13:47:47,811 WARN  [org.kie.server.services.drools.DroolsKieServerExtension] (EJB default - 1) Unexpected error while create instance of type com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder$8 due to class com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder$8 cannot access its superinterface com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder$WithMember (com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder$8 is in unnamed module of loader org.kie.scanner.KieURLClassLoader @24563422; com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder$WithMember is in unnamed module of loader 'com.fasterxml.jackson.core.jackson-databind@2.12.1' @4c2e0c40)
+13:47:47,936 INFO  [org.kie.server.services.jbpm.JbpmKieServerExtension] (EJB default - 1) Container T0dbe28f56b6540b7b74c8653cd6fb873 does not include processes, jBPM KIE Server extension skipped
+13:47:47,937 INFO  [org.kie.server.services.impl.KieServerImpl] (EJB default - 1) Container T0dbe28f56b6540b7b74c8653cd6fb873 (for release id com.optum.rws.waas.data.generated:T0dbe28f56b6540b7b74c8653cd6fb873:6.0-SNAPSHOT) successfully started
+13:47:50,236 INFO  [org.drools.compiler.kie.builder.impl.InternalKieModuleProvider] (EJB default - 1) Creating KieModule for artifact com.optum.rws.waas.data.generated:TSAND9a6ff7e27dd2461da3c707cb8923d277test:2.0-SNAPSHOT
+13:47:50,242 INFO  [org.drools.modelcompiler.CanonicalKieModuleProvider] (EJB default - 1) No executable model found for artifact com.optum.rws.waas.data.generated:TSAND9a6ff7e27dd2461da3c707cb8923d277test:2.0-SNAPSHOT. Falling back to resources parsing.
+13:47:50,753 INFO  [org.drools.compiler.kie.builder.impl.KieContainerImpl] (EJB default - 1) Start creation of KieBase: KBase
+13:47:51,673 INFO  [org.drools.compiler.kie.builder.impl.KieContainerImpl] (EJB default - 1) End creation of KieBase: KBase
+13:47:51,674 WARN  [org.jboss.modules.define] (EJB default - 1) Failed to define class .module-info in Module "deployment.kie-server.war" from Service Module Loader: java.lang.NoClassDefFoundError: Failed to link /module-info (Module "deployment.kie-server.war" from Service Module Loader): /module-info is not a class because access_flag ACC_MODULE is set
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1017)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1096)
+	at org.jboss.modules.ModuleClassLoader.doDefineOrLoadClass(ModuleClassLoader.java:424)
+	at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:555)
+	at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:339)
+	at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:126)
+	at org.jboss.modules.Module.loadModuleClass(Module.java:753)
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:247)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:410)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398)
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:128)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:576)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:576)
+	at deployment.kie-server.war//org.drools.reflective.classloader.ProjectClassLoader.internalLoadClass(ProjectClassLoader.java:173)
+	at deployment.kie-server.war//org.drools.reflective.classloader.ProjectClassLoader.loadClass(ProjectClassLoader.java:146)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at deployment.kie-server.war//org.kie.server.services.drools.DroolsKieServerExtension.createContainer(DroolsKieServerExtension.java:115)
+	at deployment.kie-server.war//org.kie.server.services.impl.KieServerImpl.createContainer(KieServerImpl.java:343)
+	at deployment.kie-server.war//org.kie.server.services.impl.ContainerManager.installContainersSync(ContainerManager.java:49)
+	at deployment.kie-server.war//org.kie.server.services.impl.ContainerManager.installContainers(ContainerManager.java:35)
+	at deployment.kie-server.war//org.kie.server.jms.ContainerManagerEJB.installContainers(ContainerManagerEJB.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.as.ee@23.0.2.Final//org.jboss.as.ee.component.ManagedReferenceMethodInterceptor.processInvocation(ManagedReferenceMethodInterceptor.java:52)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:509)
+	at org.jboss.as.weld.common@23.0.2.Final//org.jboss.as.weld.interceptors.Jsr299BindingsInterceptor.delegateInterception(Jsr299BindingsInterceptor.java:79)
+	at org.jboss.as.weld.common@23.0.2.Final//org.jboss.as.weld.interceptors.Jsr299BindingsInterceptor.doMethodInterception(Jsr299BindingsInterceptor.java:89)
+	at org.jboss.as.weld.common@23.0.2.Final//org.jboss.as.weld.interceptors.Jsr299BindingsInterceptor.processInvocation(Jsr299BindingsInterceptor.java:102)
+	at org.jboss.as.ee@23.0.2.Final//org.jboss.as.ee.component.interceptors.UserInterceptorFactory$1.processInvocation(UserInterceptorFactory.java:63)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@23.0.2.Final//org.jboss.as.ejb3.component.invocationmetrics.ExecutionTimeInterceptor.processInvocation(ExecutionTimeInterceptor.java:43)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@23.0.2.Final//org.jboss.as.ejb3.tx.EjbBMTInterceptor.handleInvocation(EjbBMTInterceptor.java:103)
+	at org.jboss.as.ejb3@23.0.2.Final//org.jboss.as.ejb3.tx.BMTInterceptor.processInvocation(BMTInterceptor.java:57)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ee@23.0.2.Final//org.jboss.as.ee.concurrent.ConcurrentContextInterceptor.processInvocation(ConcurrentContextInterceptor.java:45)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InitialInterceptor.processInvocation(InitialInterceptor.java:40)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:53)
+	at org.jboss.as.ee@23.0.2.Final//org.jboss.as.ee.component.interceptors.ComponentDispatcherInterceptor.processInvocation(ComponentDispatcherInterceptor.java:52)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@23.0.2.Final//org.jboss.as.ejb3.component.singleton.SingletonComponentInstanceAssociationInterceptor.processInvocation(SingletonComponentInstanceAssociationInterceptor.java:53)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@23.0.2.Final//org.jboss.as.ejb3.component.interceptors.AdditionalSetupInterceptor.processInvocation(AdditionalSetupInterceptor.java:54)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:509)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.module.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:81)
+	at org.jboss.as.weld.common@23.0.2.Final//org.jboss.as.weld.ejb.EjbRequestScopeActivationInterceptor.processInvocation(EjbRequestScopeActivationInterceptor.java:89)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@23.0.2.Final//org.jboss.as.ejb3.component.interceptors.CurrentInvocationContextInterceptor.processInvocation(CurrentInvocationContextInterceptor.java:41)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@23.0.2.Final//org.jboss.as.ejb3.component.invocationmetrics.WaitTimeInterceptor.processInvocation(WaitTimeInterceptor.java:47)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@23.0.2.Final//org.jboss.as.ejb3.security.SecurityContextInterceptor.processInvocation(SecurityContextInterceptor.java:100)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@23.0.2.Final//org.jboss.as.ejb3.deployment.processors.StartupAwaitInterceptor.processInvocation(StartupAwaitInterceptor.java:22)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:509)
+	at org.jboss.as.ejb3@23.0.2.Final//org.jboss.as.ejb3.component.singleton.ContainerManagedConcurrencyInterceptor.processInvocation(ContainerManagedConcurrencyInterceptor.java:106)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@23.0.2.Final//org.jboss.as.ejb3.component.interceptors.ShutDownInterceptorFactory$1.processInvocation(ShutDownInterceptorFactory.java:64)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@23.0.2.Final//org.jboss.as.ejb3.component.interceptors.LoggingInterceptor.processInvocation(LoggingInterceptor.java:67)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ee@23.0.2.Final//org.jboss.as.ee.component.NamespaceContextInterceptor.processInvocation(NamespaceContextInterceptor.java:50)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.ContextClassLoaderInterceptor.processInvocation(ContextClassLoaderInterceptor.java:60)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:438)
+	at org.wildfly.security.elytron-private@1.15.3.Final//org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:633)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.AccessCheckingInterceptor.processInvocation(AccessCheckingInterceptor.java:57)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:53)
+	at org.jboss.as.ee@23.0.2.Final//org.jboss.as.ee.component.ViewService$View.invoke(ViewService.java:198)
+	at org.jboss.as.ee@23.0.2.Final//org.jboss.as.ee.component.ViewDescription$1.processInvocation(ViewDescription.java:191)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@23.0.2.Final//org.jboss.as.ejb3.component.interceptors.LogDiagnosticContextRecoveryInterceptor.processInvocation(LogDiagnosticContextRecoveryInterceptor.java:82)
+	at org.jboss.invocation@1.6.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@23.0.2.Final//org.jboss.as.ejb3.component.interceptors.AsyncFutureInterceptorFactory$2$2.runInvocation(AsyncFutureInterceptorFactory.java:152)
+	at org.jboss.as.ejb3@23.0.2.Final//org.jboss.as.ejb3.component.interceptors.AsyncInvocationTask.run(AsyncInvocationTask.java:81)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1348)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.JBossThread.run(JBossThread.java:513)
+
