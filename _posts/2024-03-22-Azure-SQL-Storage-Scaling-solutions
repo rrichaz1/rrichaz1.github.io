@@ -1,0 +1,65 @@
+## Sharding pattern
+
+Divide a data store into a set of horizontal partitions or shards. This can improve scalability when storing and accessing large volumes of data.
+
+#### Problem Statement
+The limitations of a data store hosted by a single server in a cloud application. These limitations include storage space, computing resources, network bandwidth, and geography. 
+- Storage space: A single server has a finite amount of disk storage, and although it can be increased, there will eventually be a limit. - Compute: The computing power of a single server might not be enough to support a large number of concurrent users, leading to slow response times and failures. 
+- Networking: Network bandwidth can also be exceeded, resulting in failed requests. 
+- Georgraphy: Storing data in the same region as the users might not be possible if they are dispersed across different regions or countries. While scaling vertically by adding more capacity can help, it is only a temporary solution. 
+A commercial cloud application needs to be able to scale almost indefinitely, so vertical scaling is not the best solution.
+
+#### Solution 
+Divide the data store into horizontal partitions or shards. Each shard has the same schema, but holds its own distinct subset of the data. A shard is a data store in its own right (it can contain the data for many entities of different types), running on a server acting as a storage node.
+
+This pattern has the following benefits:
+
+- You can scale the system out by adding further shards running on additional storage nodes.
+- A system can use off-the-shelf hardware rather than specialized and expensive computers for each storage node.
+- You can reduce contention and improve performance by balancing the workload across shards.
+- In the cloud, shards can be located physically close to the users that'll access the data.
+
+A shard typically contains items that fall within a specified range determined by one or more attributes of the data. These attributes form the shard key (sometimes referred to as the partition key). The shard key should be static. It shouldn't be based on data that might change.
+
+there doesn't have to be a one-to-one correspondence between shards and the servers that host them—a single server can host multiple shards
+
+##### Sharding strategies
+
+--The Lookup strategy--. In this strategy the sharding logic implements a map that routes a request for data to the shard that contains that data using the shard key. In a multitenant application all the data for a tenant might be stored together in a shard using the tenant ID as the shard key. 
+the system transparently maps virtual shards to physical partitions. The mapping between a virtual shard and a physical partition can change without requiring the application code be modified to use a different set of shard keys.
+
+--The Range strategy--. This strategy groups related items together in the same shard, and orders them by shard key—the shard keys are sequential. It's useful for applications that frequently retrieve sets of items using range queries (queries that return a set of data items for a shard key that falls within a given range). For example, if an application regularly needs to find all orders placed in a given month, this data can be retrieved more quickly if all orders for a month are stored in date and time order in the same shard. 
+
+--The Hash strategy--. The purpose of this strategy is to reduce the chance of hotspots (shards that receive a disproportionate amount of load). It distributes the data across the shards in a way that achieves a balance between the size of each shard and the average load that each shard will encounter. The sharding logic computes the shard to store an item in based on a hash of one or more attributes of the data. The chosen hashing function should distribute data evenly across the shards, possibly by introducing some random element into the computation.
+
+
+## Elastic Pool
+Azure SQL Database elastic pools are a simple, cost-effective solution for managing and scaling multiple databases with varying and unpredictable usage demands. The databases in an elastic pool are on a single server and share a set number of resources at a set price. Elastic pools in SQL Database enable software-as-a-service (SaaS) developers to optimize the price performance for a group of databases within a prescribed budget while delivering performance elasticity for each database.
+
+A typical application pattern is to provision a single database for each customer. However, different customers often have varying and unpredictable usage patterns, and it's difficult to predict the resource requirements of each database user. Traditionally, you had two options:
+
+Overprovision resources based on peak usage and overpay.
+Underprovision to save cost at the expense of performance and customer satisfaction during peaks.
+Elastic pools solve this problem by ensuring that databases get the performance resources they need when they need them. They provide a simple resource allocation mechanism within a predictable budget. 
+
+
+vcore - separates compute and storage
+
+General Purpose - Blob storage has data and compute has active and spare
+
+Business Critical - Always on - Data in on SSDs Primary replica (read and write, Secondary replica - write)
+
+#### Connecting to Elastic pool instances
+
+
+
+#### Sharding Limits
+
+Are there any limits to number of shards?
+What are the physical limits of number of outbound connections> Generally one server can only connect to x number.
+
+
+## References
+1. [Azure Architecture Center -Sharding](https://learn.microsoft.com/en-us/azure/architecture/patterns/sharding)
+
+2. [Horizontal Scaling in Azure SQL Database](https://www.youtube.com/watch?v=ISs__Ub9oh8)

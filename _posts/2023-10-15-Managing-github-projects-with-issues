@@ -1,0 +1,63 @@
+
+
+
+Github actions
+
+Lessons Learned:
+1. There is no way to change and replay
+2. The error may be on another line - indentation matters!!
+3. Hard to debug error "Unhandled error: SyntaxError: Unexpected string" as line numbers are not printed.
+
+
+ou have an error in your yaml syntax on line 80
+
+
+#https://docs.github.com/en/actions/learn-github-actions/expressions
+
+#https://github.com/actions/github-script
+#https://github.com/actions/add-to-project
+#https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels
+
+https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
+
+https://docs.github.com/en/rest/teams/members?apiVersion=2022-11-28#get-team-membership-for-a-user
+https://octokit.github.io/rest.js/v18#users
+
+https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions
+
+
+https://github.com/actions/github-script
+
+
+running jobs sequentially
+https://github.com/orgs/community/discussions/42734
+
+Permissions
+https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
+https://docs.github.com/en/rest/actions/permissions?apiVersion=2022-11-28
+
+curl -H "Authorization: token  <TOKEN>" \  
+https://api.github.com/user/repos/<username>/<repo>  
+
+
+curl -L \
+  -H "Accept: application/vnd.github+json" \
+  -H "Authorization: Bearer <TOKEN>" \
+  -H "X-GitHub-Api-Version: 2022-11-28" \
+  https://api.github.com/user
+
+
+  curl -L \
+  -H "Accept: application/vnd.github+json" \
+  -H "Authorization: Bearer <TOKEN>" \
+  -H "X-GitHub-Api-Version: 2022-11-28" \
+https://api.github.com/orgs/OptumInsight-Provider/teams/TCP_GHEC_WRITE/memberships/rsing198_uhg
+
+  https://api.github.com/orgs/ORG/teams/TEAM_SLUG/memberships/USERNAME
+
+
+#https://stackoverflow.com/questions/72387730/github-action-how-to-check-if-pr-creator-is-part-of-a-specific-team       
+
+
+
+https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/making-authenticated-api-requests-with-a-github-app-in-a-github-actions-workflow

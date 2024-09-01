@@ -64,7 +64,21 @@ FHIR At Scale task force- guide created a [guide](http://hl7.org/fhir/us/udap-se
 3. Verified app details shown to user
 4. Trusted Identity Provider (IdP) can provide reusable digital identity and other user attributes
 
-UPDAP 
+
+### JWT based authentication with Certificates
+1. No shared secrets needed
+2. identity pf app operator is crytographically verified
+3. digital signature allows validation of included information in token request
+4. standard PKI workflows enable certifcate rollover, revocations, and status checking
+5. compromised clients (and servers) can be rapidly removed from ecosystem
+
+### Tiered Oauth
+1. Reusable digital identities provided by trusted identity providers (IdPs)
+2. Identity information is exchanged directly from Idp to data holder when UDAP tiered Oauth is used
+3. Opportunity for data holder to interact with both the user and the IdP during the process
+
+
+UDAP 
 http://hl7.org/fhir/us/udap-security/index.html
 
 
