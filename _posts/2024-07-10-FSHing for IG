@@ -1,0 +1,13 @@
+FHIR Shorthand (FSH) is a language for defining artifacts in HL7 FHIR Implementation Guides (IGs). It was created to be a user-friendly, fast, and scalable tool for creating and maintaining IGs. FSH is designed to be concise, understandable, and aligned with the author's intent
+
+
+
+## Validating FSH
+
+When it comes to implementing and customizing a FHIR Implementation Guide (IG), validation plays a crucial role in ensuring accuracy and compliance. Thankfully, the process of validating an IG is made simpler with the help of FHIR Shorthand (FSH) and the FHIR Publisher tool. Let's say you have defined an IG and want to modify the FSH to include an extension. For instance, you can use the syntax extension[OrderableCode].valueDate = 2023-04-24 to specify a value for the extension. Once you make the necessary changes, run the FHIR Publisher tool and wait for it to generate the QA Report. This report provides valuable insights into any issues or errors in your IG, helping you identify and resolve them effectively. To delve deeper into FHIR Shorthand and its capabilities, you can refer to the FHIR Shorthand reference, which offers useful examples and guidelines for defining instances. So, make use of these resources to validate your IG and ensure its adherence to FHIR standards.
+
+
+[FSH Overview IG](https://build.fhir.org/ig/HL7/fhir-shorthand/overview.html)
+[Video - Mark Kramer - Learn to FSH: a friendly introduction to FHIR Shorthand](https://www.youtube.com/watch?v=jegp6qEjgwM)
+[Video - Chris Moesel - Advanced FSH: What to do when you’re hooked](https://www.youtube.com/watch?v=u6Btqb0Sz3M)
+[FSH Finder](https://fshschool.org/fsh-finder/)

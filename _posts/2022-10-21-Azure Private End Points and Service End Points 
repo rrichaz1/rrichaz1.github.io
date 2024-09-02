@@ -1,0 +1,26 @@
+When it comes to networking, the terminology is Azure can be pretty confusing. 
+
+
+
+Azure Private Link enables you to access Azure PaaS Services (for example, Azure Storage and SQL Database) and Azure hosted customer-owned/partner services over a private endpoint in your virtual network.
+
+Traffic between your virtual network and the service travels the Microsoft backbone network. Exposing your service to the public internet is no longer necessary. You can create your own private link service in your virtual network and deliver it to your customers. Setup and consumption using Azure Private Link is consistent across Azure PaaS, customer-owned, and shared partner services.
+
+
+[Azure Private Link Documentation](https://learn.microsoft.com/en-us/azure/private-link/)
+
+
+June 2024 
+
+it about the ips
+
+nslookup
+tcpping
+ping
+nameresolver
+
+
+
+azurerm_app_service_virtual_network_swift_connection
+
+dnszone networking

@@ -31,3 +31,9 @@ Now [changing the gem](https://github.com/github/pages-gem/issues/752) to github
 [Markdown cheatsheet](https://www.markdownguide.org/cheat-sheet/)
 [YAML cheatsheet](https://learntheweb.courses/topics/markdown-yaml-cheat-sheet/#yaml)
 [Install jekyll on mac](https://jekyllrb.com/docs/installation/macos/)
+
+https://abdullah85.github.io/pages-themes-previewer/github/pages/themes/2023/11/21/adding-additional-themes-with-dropdown.html
+
+https://jekyll-themes.com/mmistakes/mm-github-pages-starter
+https://jekyll-themes.com/sproogen/modern-resume-theme
+https://github.com/jglovier/resume-template

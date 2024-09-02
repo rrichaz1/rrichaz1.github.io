@@ -49,9 +49,19 @@ General Purpose - Blob storage has data and compute has active and spare
 
 Business Critical - Always on - Data in on SSDs Primary replica (read and write, Secondary replica - write)
 
+
 #### Connecting to Elastic pool instances
 
 
+#### Azure Elastic scale
+Azure SQL Database Elastic Scale allows users to scale compute and storage resources for elastic pools and pooled databases dynamically. This can be done using the Azure portal, PowerShell, Azure CLI, or REST API. Users can monitor and cancel scaling changes using the Azure portal, PowerShell, or Azure CLI
+
+#### Issues to be considered with sharding especially with scaling
+1. Number of databases?
+2. Number of outbound connections from app services (the thread count increases as there is connection to each db)
+3. Merge and split shards?
+4. Schema changes to be transmitted to each db
+5. For list, range type shard keys the data has to be partitioned in the database by each shard key 
 
 #### Sharding Limits
 
@@ -59,7 +69,113 @@ Are there any limits to number of shards?
 What are the physical limits of number of outbound connections> Generally one server can only connect to x number.
 
 
+Azure SQL external tables are used to create cross-database queries using Azure's preview Elastic Query. When a query is executed on an external table, it connects to the source database and gets the data, which is not stored locally. Azure SQL Database automatically opens multiple parallel connections to the remote databases where the tables are.
+[Explanation on Stack Overflow](https://stackoverflow.com/questions/55795965/understanding-azure-sql-server-external-tables)
+
+External tables in Azure SQL Server can be useful for controlling access to external data in Synapse SQL pool, and for using tools like Power BI with Synapse SQL pool. They can also allow for the decentralized loading of a scale-out data warehouse, and allow the same table to be used from multiple databases
+
+
+
+#### Elastic Pool
+
+An elastic pool is a set (or pool) of shared resources, or DTUs, that could be used by many databases in that pool.
+In a pool I set the number of DTUs and databases in that pool can scale up or down to use the available DTUs up to the maximum I’ve set for that pool.
+The advantage is the scaling up/down happens automatically. I don’t have to set the service tier of each individual database to use a certain number of DTUs. By putting the databases in the pool, they have the pool DTUs available to them and as the workload increases or decreases, it will scale up or down the number of DTUs it uses.
+Pools are ideal when you have an application that is used by multiple customers. It’s designed so each customer has its own database in the backend. Each database has the same identical schema and depending on how heavy or light each customer uses it, the pool will manage how the resources are used in each of the databases throughout the day.
+
+#### Elastic Query
+
+Elastic query is cross database queries. This is similar to how we used to do this with SQL Server on premises with linked services.
+We do elastic queries through external tables. 
+For multiple databases on each database:
+1.  create the external table on each database.
+2. create master key and database scoped credential for the external data source
+
+If I want to use my data warehouse database to query data that’s in my sample OLTP, I set up a cross database query or an external table from my data warehouse. To do this:
+
+I first need to create an external data source in my data warehouse database. You can do that from the external resource folder, and it generates a sample script for you, there’s no UI for you.
+I would script and create a data source and that will then make a reference, in this case to my OLTP database.
+Once I’ve got that set up, I can create an external table. In Management Studio, your external tables are managed in a folder under Tables.
+When I create an external table, I’m creating a pointer to a table (in my sample OLTP in this case). It’s important to understand that when I create the external table in the data warehouse, it does not load the data from the OLTP, it’s simply a pointer to it.
+Once I’ve created that external table in my data warehouse pointing to the OLTP, a query executed from my data warehouse referencing this external table will read the data from the OLTP in this example – this is an elastic query.
+
+
+#### Split Merge service 
+
+*** Elastic job Agents - scehdule jobs
+
 ## References
 1. [Azure Architecture Center -Sharding](https://learn.microsoft.com/en-us/azure/architecture/patterns/sharding)
 
 2. [Horizontal Scaling in Azure SQL Database](https://www.youtube.com/watch?v=ISs__Ub9oh8)
+
+https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-introduction?view=azuresql
+
+
+https://vishalkhatal.wordpress.com/2018/08/16/how-to-scale-out-azure-sql-database/
+
+https://pragmaticworks.com/blog/the-difference-between-elastic-pools-and-elastic-queries
+
+
+
+
+Title: Scaling Azure SQL Database from 10 to 200 Customers: My Journey with Sharding and Understanding 'Elastic'
+
+I. Introduction
+A. Brief Background of My Experience as a Software Engineer and Architect
+B. The Purpose of the Blog: Sharing Experience and Clarifying Elastic Terms
+
+"Imagine steering a small boat with just a few passengers, and then suddenly, you're asked to captain a massive ship with hundreds on board. That's precisely the kind of transition I experienced as a software engineer and architect, navigating the waters of Azure SQL Database. From managing a database for a mere 10 customers to catapulting it to accommodate a whopping 200, the journey was nothing short of an adventure. In this exciting voyage, I encountered uncharted territories, navigated through complex terrains, and had to decode the mysterious language of 'Elastic' used by Azure. So, buckle up as I recount my thrilling journey of scaling Azure SQL Database and deciphering the elastic enigma, hoping to shed light and provide guidance for those embarking on a similar path."
+
+II. The Challenge of Scaling
+A. Introduction to Scaling in Azure SQL Database
+B. The Journey from 10 to 200 Customers: Challenges Faced and Overcome
+
+III. The Role of Sharding in Scaling
+A. Definition and Importance of Sharding
+B. My Experience with Implementing Sharding
+C. The Impact of Sharding on Scaling
+
+IV. Understanding 'Elastic' in Azure
+A. Introduction to Elastic Terms in Azure
+B. Definition and Purpose of Elastic Pools
+C. Definition and Purpose of Elastic Query
+D. The Difference Between Elastic Pools and Elastic Query
+
+V. Case Study: Practical Application of Sharding and Elastic Tools
+A. A Real-world Scenario of Implementing Sharding and Using Elastic Tools
+B. Results and Insights Gained
+
+VI. Conclusion
+A. Recap of the Scaling Journey and Understanding Elastic Terms
+B. Lessons Learned and Tips for Others Facing Similar Scaling Challenges
+
+VII. References
+
+This outline should help you structure your blog post effectively, ensuring all key points are covered.
+
+
+
+https://www.youtube.com/watch?v=zVesEqayRsE
+
+https://github.com/Huachao/azure-content/blob/master/articles/sql-database/sql-database-elastic-pool-csharp.md
+
+https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-data-dependent-routing?view=azuresql
+
+https://www.sqlservercentral.com/blogs/azure-sql-database-elastic-scale-part-1-what-is-sharding
+
+https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-introduction?view=azuresql
+
+https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-pool-scale?view=azuresql&tabs=azure-portal
+
+https://github.com/MicrosoftDocs/azure-docs/issues/54525
+
+https://stackoverflow.com/questions/50781540/azure-elastic-scale-database-per-tenant-how-to-implement-data-dependent-routing
+
+https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-shard-map-management?view=azuresql
+
+https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-introduction?view=azuresql
+
+https://github.com/microsoft/elastic-db-tools-for-java
+
+https://github.com/Azure/elastic-db-tools
